@@ -13,12 +13,12 @@ public class PauseMenuLogic : MonoBehaviour
 
     public void ResumeButton()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        PauseMenu.SetActive(false);
         Time.timeScale = 1f;
     }
 
     public void MenuButton()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("MainMenu");
     }
 }
