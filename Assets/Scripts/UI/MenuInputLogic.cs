@@ -6,7 +6,7 @@ public class MenuInputLogic : MonoBehaviour
     [SerializeField] private GameObject creditsMenu;
     public void StartButton()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("TutorialLevel");
     }
 
     public void CreditsButton()
