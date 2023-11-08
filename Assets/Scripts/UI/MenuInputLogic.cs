@@ -1,16 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class MenuInputReader : MonoBehaviour
+public class MenuInputLogic : MonoBehaviour
 {
-    [SerializeField] GameObject creditsMenu;
+    [SerializeField] private GameObject creditsMenu;
     public void StartButton()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void CreditsScreen()
+    public void CreditsButton()
     {
         creditsMenu.SetActive(true);
     }

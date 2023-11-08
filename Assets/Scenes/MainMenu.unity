@@ -207,7 +207,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 426345818}
-        m_TargetAssemblyTypeName: MenuInputReader, Assembly-CSharp
+        m_TargetAssemblyTypeName: MenuInputLogic, Assembly-CSharp
         m_MethodName: ExitButton
         m_Mode: 1
         m_Arguments:
@@ -736,7 +736,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 426345813}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e30f6e4bb43572449d3ad6aff2fe2ce, type: 3}
+  m_Script: {fileID: 11500000, guid: c6bad81ac0be0404f89a3f5a5c694fd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   creditsMenu: {fileID: 1618609269}
@@ -1336,8 +1336,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 426345818}
-        m_TargetAssemblyTypeName: MenuInputReader, Assembly-CSharp
-        m_MethodName: CreditsScreen
+        m_TargetAssemblyTypeName: MenuInputLogic, Assembly-CSharp
+        m_MethodName: CreditsButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1469,7 +1469,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 426345818}
-        m_TargetAssemblyTypeName: MenuInputReader, Assembly-CSharp
+        m_TargetAssemblyTypeName: MenuInputLogic, Assembly-CSharp
         m_MethodName: StartButton
         m_Mode: 1
         m_Arguments:
@@ -1602,7 +1602,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 426345818}
-        m_TargetAssemblyTypeName: MenuInputReader, Assembly-CSharp
+        m_TargetAssemblyTypeName: MenuInputLogic, Assembly-CSharp
         m_MethodName: MenuButton
         m_Mode: 1
         m_Arguments:
