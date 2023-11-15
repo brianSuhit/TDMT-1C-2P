@@ -17,7 +17,6 @@ public class MenuInputLogic : MonoBehaviour
     public void ExitButton()
     {
         Application.Quit();
-        Debug.Log("Me cierro");
     }
 
     public void MenuButton()
