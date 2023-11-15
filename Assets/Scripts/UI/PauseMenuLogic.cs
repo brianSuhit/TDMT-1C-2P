@@ -3,17 +3,19 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenuLogic : MonoBehaviour
 {
-    [SerializeField] private GameObject PauseMenu;
-
+    [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private AudioSource levelMusic;
     public void PauseButton()
     {
-        PauseMenu.SetActive(true);
+        pauseMenu.SetActive(true);
+        levelMusic.Pause();
         Time.timeScale = 0f;
     }
 
     public void ResumeButton()
     {
-        PauseMenu.SetActive(false);
+        pauseMenu.SetActive(false);
+        levelMusic.Play();
         Time.timeScale = 1f;
     }
 
