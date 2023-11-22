@@ -21,6 +21,7 @@ public class PauseMenuLogic : MonoBehaviour
 
     public void MenuButton()
     {
+        //TODO: TP2 - Fix - Hardcoded value/s
         SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1f;
     }

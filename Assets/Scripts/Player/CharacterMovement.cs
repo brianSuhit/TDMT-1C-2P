@@ -10,6 +10,7 @@ public class CharacterMovement : MonoBehaviour
     {
         transform.position = transform.position + new Vector3(inputValue.x, inputValue.y) * characterSpeed * Time.deltaTime;
     }
+    //TODO: TP2 - Move all input reads to specific class
     public void SetMovementValue(InputAction.CallbackContext inputContext)
     {
         inputValue = inputContext.ReadValue<Vector2>();

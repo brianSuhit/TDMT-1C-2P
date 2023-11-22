@@ -6,6 +6,7 @@ public class MenuInputLogic : MonoBehaviour
     [SerializeField] private GameObject creditsMenu;
     public void StartButton()
     {
+        //TODO: TP2 - Fix - Hardcoded value/s
         SceneManager.LoadScene("TutorialLevel");
     }
 
