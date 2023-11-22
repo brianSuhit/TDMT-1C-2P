@@ -15,5 +15,4 @@ public class CharacterMovement : MonoBehaviour
     {
         _direction = direction;
     }
-
 }
