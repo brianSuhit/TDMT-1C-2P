@@ -5,9 +5,11 @@ public class PauseMenuLogic : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private AudioSource levelMusic;
+    [SerializeField] private GameObject tutorialDialogue;
     public void PauseButton()
     {
         pauseMenu.SetActive(true);
+        tutorialDialogue.SetActive(false);
         levelMusic.Pause();
         Time.timeScale = 0f;
     }
@@ -15,6 +17,7 @@ public class PauseMenuLogic : MonoBehaviour
     public void ResumeButton()
     {
         pauseMenu.SetActive(false);
+        tutorialDialogue.SetActive(true);
         levelMusic.Play();
         Time.timeScale = 1f;
     }
