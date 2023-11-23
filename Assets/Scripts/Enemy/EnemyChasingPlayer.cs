@@ -5,8 +5,8 @@ public class EnemyChasingPlayer : MonoBehaviour
 {
     [SerializeField] private CharacterMovement characterMovement;
     [SerializeField] private float threshold = 0.0001f;
-    private int currentIndex = 0;
     [SerializeField] private List<Vector2> positions;
+    private int currentIndex = 0;
 
     [SerializeField] private CharacterMovement targetPos;
 
