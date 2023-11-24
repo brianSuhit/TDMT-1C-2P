@@ -37,15 +37,16 @@ public class EnemyChasingPlayer : MonoBehaviour
 
     private void ChasingPlayer()
     {
-        Vector2 currentPosition = transform.position;
-        Vector2 nextPosition = targetPos.transform.position;
-
         if (targetPos == null)
         {
             Debug.LogError($"{name}: Target is null!");
         }
+
         else if (Vector2.Distance(transform.position, targetPos.transform.position) > threshold)
         {
+            Vector2 currentPosition = transform.position;
+            Vector2 nextPosition = targetPos.transform.position;
+
             Vector2 directionToNextPos = nextPosition - currentPosition;
             directionToNextPos.Normalize();
 
