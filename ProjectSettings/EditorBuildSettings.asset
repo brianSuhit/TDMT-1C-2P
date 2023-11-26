@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TutorialLevel.unity
     guid: ab9db9e01f6b66a42837ce7a4d6f8e1e
   - enabled: 1
-    path: Assets/Scenes/EnemyLevel.unity
-    guid: 0b1dfe41bf416c048b99b27b60929485
+    path: Assets/Scenes/TutorialLevel2.unity
+    guid: 663296b380ceceb4b9de323de4e85ed7
+  - enabled: 1
+    path: Assets/Scenes/GameplayLevel1.unity
+    guid: cbdd74dd271de6e4faedcf93e3e57c4c
   m_configObjects: {}

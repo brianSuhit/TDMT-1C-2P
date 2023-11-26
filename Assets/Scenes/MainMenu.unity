@@ -740,6 +740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   creditsMenu: {fileID: 1618609269}
   MainMenu: {fileID: 423463262}
+  startButton: TutorialLevel
 --- !u!1 &466100254
 GameObject:
   m_ObjectHideFlags: 0

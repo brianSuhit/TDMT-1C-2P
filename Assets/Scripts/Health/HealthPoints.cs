@@ -12,6 +12,7 @@ public class HealthPoints : MonoBehaviour
     {
         health = maxHealth;
     }
+
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -29,6 +30,11 @@ public class HealthPoints : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+        }
+
+        if (isEnemy && health <= 0)
+        {
+            GameObject.FindGameObjectWithTag("LevelChangeShip").GetComponent<GameplayLevelChange>().EnemiesEliminated();
         }
     }
 }
