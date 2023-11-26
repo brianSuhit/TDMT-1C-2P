@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class HealthPoints : MonoBehaviour
 {
-    [SerializeField] private int maxHealth = 100;
-    [SerializeField] private int health = 100;
+    [SerializeField] public int maxHealth = 100;
+    [SerializeField] public int health = 100;
 
     [SerializeField] private bool shouldDestroyOnDeath;
     [SerializeField] private bool isEnemy;
