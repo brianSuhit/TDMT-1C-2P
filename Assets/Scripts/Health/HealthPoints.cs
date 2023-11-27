@@ -8,8 +8,8 @@ public class HealthPoints : MonoBehaviour
     [SerializeField] public int maxHealth = 100;
     [SerializeField] public int health = 100;
 
-    [SerializeField] private bool shouldDestroyOnDeath; // bala
-    [SerializeField] private bool isEnemy; // enemies
+    [SerializeField] private bool shouldDestroyOnDeath;
+    [SerializeField] private bool isEnemy; 
 
     private bool isVulnerable = true;
 

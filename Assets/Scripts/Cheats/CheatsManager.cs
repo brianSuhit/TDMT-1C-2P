@@ -6,11 +6,12 @@ using UnityEngine.InputSystem;
 public class CheatsManager : MonoBehaviour
 {
     private Action InvinsibleEvent;
+    private Action SpeedMultiplierEvent;
 
+    [SerializeField] private CharacterMovement characterMovement;
     [SerializeField] private HealthPoints healthPoints;
     [SerializeField] private List<HealthPoints> enemiesListCount = new List<HealthPoints>();
     [SerializeField] private int damageAOE = 5;
-
 
     public void Awake()
     {
@@ -30,6 +31,7 @@ public class CheatsManager : MonoBehaviour
     public void Start()
     {
         InvinsibleEvent = healthPoints.GetVulnerabilityChangeLogic();
+        SpeedMultiplierEvent = characterMovement.GetSpeedChangeLogic();
     }
 
     public void SetInvulnerabilityState(InputAction.CallbackContext inputContext)
@@ -54,15 +56,12 @@ public class CheatsManager : MonoBehaviour
 
     public void SetMovementSpeed(InputAction.CallbackContext inputContext)
     {
+        Debug.LogError("I multiplier speed x2");
+
         if (inputContext.started)
         {
-            SpeedMultiplier();
+            SpeedMultiplierEvent?.Invoke();
         }
-    }
-
-    public void SpeedMultiplier()
-    {
-        Debug.LogError("Need a reference");
     }
 
     public void MakeDamage()
