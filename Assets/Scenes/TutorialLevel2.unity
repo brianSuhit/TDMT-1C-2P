@@ -717,6 +717,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182400145}
   m_CullTransparentMesh: 1
+--- !u!114 &213037238 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4606740204870232164, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+  m_PrefabInstance: {fileID: 603630820}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02aec5007206f1a4896b0fd572f709a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &224274505
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,6 +1302,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de1a76cdfc08fd246934b2e66600f606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &603630820
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2228164089236198482, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_Name
+      value: Cheats
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606740204870232164, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: playerSpeed
+      value: 
+      objectReference: {fileID: 403236248}
+    - target: {fileID: 4606740204870232164, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: healthPoints
+      value: 
+      objectReference: {fileID: 403236251}
+    - target: {fileID: 4606740204870232164, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: enemiesListCount.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606740204870232164, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: enemiesListCount.Array.data[0]
+      value: 
+      objectReference: {fileID: 601144599}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.031656325
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2874532
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07178073
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
 --- !u!1 &623278241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,8 +1495,36 @@ MonoBehaviour:
     m_ActionId: 399e5b97-dcbe-4b48-95f9-762d41e407da
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 7a6001d5-9737-486a-b14c-ac4af4ef9b45
+      m_Calls:
+      - m_Target: {fileID: 213037238}
+        m_TargetAssemblyTypeName: CheatsManager, Assembly-CSharp
+        m_MethodName: SetInvulnerabilityState
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 95d953a2-63a2-4575-b310-176dbdd83298
+    m_ActionName: Player/GodMode[/Keyboard/f10]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 213037238}
+        m_TargetAssemblyTypeName: CheatsManager, Assembly-CSharp
+        m_MethodName: SetDamageAOE
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 57101f9d-ded2-4b7b-9617-256432921b59
     m_ActionName: Player/DamageAOE[/Keyboard/f12]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
@@ -3636,3 +3748,4 @@ SceneRoots:
   - {fileID: 2089873588}
   - {fileID: 3024367897527574322}
   - {fileID: 1538765802}
+  - {fileID: 603630820}

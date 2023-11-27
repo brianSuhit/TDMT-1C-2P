@@ -1480,6 +1480,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 95d953a2-63a2-4575-b310-176dbdd83298
     m_ActionName: Player/GodMode
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1139921602}
+        m_TargetAssemblyTypeName: CheatsManager, Assembly-CSharp
+        m_MethodName: SetDamageAOE
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 57101f9d-ded2-4b7b-9617-256432921b59
+    m_ActionName: Player/DamageAOE[/Keyboard/f12]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -4361,6 +4377,22 @@ PrefabInstance:
       propertyPath: healthPoints
       value: 
       objectReference: {fileID: 403236251}
+    - target: {fileID: 4606740204870232164, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: enemiesListCount.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606740204870232164, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: enemiesListCount.Array.data[0]
+      value: 
+      objectReference: {fileID: 1634066301}
+    - target: {fileID: 4606740204870232164, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: enemiesListCount.Array.data[1]
+      value: 
+      objectReference: {fileID: 2082705889}
+    - target: {fileID: 4606740204870232164, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: enemiesListCount.Array.data[2]
+      value: 
+      objectReference: {fileID: 223736095}
     - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.031656325
