@@ -10,10 +10,6 @@ public class GameOverLogic : MonoBehaviour
     [SerializeField] private HealthPoints healthPoints;
     [SerializeField] private string buttonToMenu = "add level name here";
 
-    private void Awake()
-    {
-        loseMusic.Play();
-    }
 
     private void Update()
     {
