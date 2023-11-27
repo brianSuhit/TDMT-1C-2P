@@ -8,8 +8,6 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private List<Vector2> positions;
     private int currentIndex = 0;
 
-    //[SerializeField] private CharacterMovement targetPos;
-
     private void Update()
     {
         EnemyPatrol();

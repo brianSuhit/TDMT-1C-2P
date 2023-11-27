@@ -1,12 +1,17 @@
+using System;
 using UnityEngine;
 
 public class HealthPoints : MonoBehaviour
 {
+    public Action DeathEvent;
+
     [SerializeField] public int maxHealth = 100;
     [SerializeField] public int health = 100;
 
-    [SerializeField] private bool shouldDestroyOnDeath;
-    [SerializeField] private bool isEnemy;
+    [SerializeField] private bool shouldDestroyOnDeath; // bala
+    [SerializeField] private bool isEnemy; // enemies
+
+    private bool isVulnerable = true;
 
     public void Start()
     {
@@ -15,7 +20,10 @@ public class HealthPoints : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
+        if (isVulnerable)
+        {
+            health -= damage;
+        }
 
         if (isEnemy && damage == 1)
         {
@@ -29,12 +37,18 @@ public class HealthPoints : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            DeathEvent?.Invoke();
+            gameObject.SetActive(false);
         }
+    }
 
-        if (isEnemy && health <= 0)
-        {
-            GameObject.FindGameObjectWithTag("LevelChangeShip").GetComponent<GameplayLevelChange>().EnemiesEliminated();
-        }
+    private void ChangeVulnerability()
+    {
+        isVulnerable = !isVulnerable;
+    }
+
+    public Action GetVulnerabilityChangeLogic()
+    {
+        return ChangeVulnerability;
     }
 }

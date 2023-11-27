@@ -1013,7 +1013,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 9084030701006928311}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de1a76cdfc08fd246934b2e66600f606, type: 3}
   m_Name: 
@@ -1280,6 +1280,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536175366}
   m_CullTransparentMesh: 1
+--- !u!114 &601144599 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1964383182636650839, guid: 0ea2859e6d660074d8ce626348d655a7, type: 3}
+  m_PrefabInstance: {fileID: 2089873588}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1a76cdfc08fd246934b2e66600f606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &623278241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,6 +1410,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 399e5b97-dcbe-4b48-95f9-762d41e407da
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7a6001d5-9737-486a-b14c-ac4af4ef9b45
+    m_ActionName: Player/DamageAOE[/Keyboard/f12]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -3057,7 +3072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2154992829532529124, guid: 0ea2859e6d660074d8ce626348d655a7, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemies
       objectReference: {fileID: 0}
     - target: {fileID: 5326405719184229624, guid: 0ea2859e6d660074d8ce626348d655a7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3517,6 +3532,14 @@ PrefabInstance:
       propertyPath: levelChangeShip
       value: 
       objectReference: {fileID: 1538765803}
+    - target: {fileID: 6688465862292627136, guid: f5ba02ff35137854797b7c85c52407f8, type: 3}
+      propertyPath: enemiesListCount.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688465862292627136, guid: f5ba02ff35137854797b7c85c52407f8, type: 3}
+      propertyPath: enemiesListCount.Array.data[0]
+      value: 
+      objectReference: {fileID: 601144599}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3572,15 +3595,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1114556303323300960, guid: b7ff27a77a4ccef46a2ae5f49f17f085, type: 3}
       propertyPath: health
-      value: 99999
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1114556303323300960, guid: b7ff27a77a4ccef46a2ae5f49f17f085, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1114556303323300960, guid: b7ff27a77a4ccef46a2ae5f49f17f085, type: 3}
       propertyPath: maxHealth
-      value: 99999
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1224754563969788173, guid: b7ff27a77a4ccef46a2ae5f49f17f085, type: 3}
       propertyPath: m_Name

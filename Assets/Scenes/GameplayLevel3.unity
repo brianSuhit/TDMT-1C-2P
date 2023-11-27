@@ -661,6 +661,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cannon: {fileID: 201834049}
   shootInterval: 1.5
+  enemyHealth: {fileID: 201834053}
+  playerHealth: {fileID: 403236251}
 --- !u!114 &201834049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1620,6 +1622,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 399e5b97-dcbe-4b48-95f9-762d41e407da
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 660983124}
+        m_TargetAssemblyTypeName: CheatsManager, Assembly-CSharp
+        m_MethodName: SetInvulnerabilityState
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 95d953a2-63a2-4575-b310-176dbdd83298
+    m_ActionName: Player/GodMode[/Keyboard/f10]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -1691,6 +1709,74 @@ RectTransform:
   m_AnchoredPosition: {x: 10, y: -10}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
+--- !u!1001 &660983123
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2228164089236198482, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_Name
+      value: Cheats
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.031656325
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2874532
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07178073
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+--- !u!114 &660983124 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4606740204870232164, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+  m_PrefabInstance: {fileID: 660983123}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02aec5007206f1a4896b0fd572f709a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &666230919
 GameObject:
   m_ObjectHideFlags: 0
@@ -2267,7 +2353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adbafaaebb09eb44adbb0dfe30c891c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: GameplayLevel2
+  sceneName: GameplayLevelBoss
 --- !u!1001 &971842856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3959,7 +4045,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: d94eb8556426dce41a2ebfc7d156c840, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4637,3 +4723,4 @@ SceneRoots:
   - {fileID: 2142708132}
   - {fileID: 999055604}
   - {fileID: 201834052}
+  - {fileID: 660983123}

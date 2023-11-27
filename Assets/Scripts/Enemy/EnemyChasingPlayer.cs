@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 public class EnemyChasingPlayer : MonoBehaviour
@@ -40,6 +41,7 @@ public class EnemyChasingPlayer : MonoBehaviour
         if (targetPos == null)
         {
             Debug.LogError($"{name}: Target is null!");
+            transform.position = Vector3.zero;
         }
 
         else if (Vector2.Distance(transform.position, targetPos.transform.position) > threshold)
