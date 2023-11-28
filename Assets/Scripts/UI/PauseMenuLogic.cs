@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class PauseMenuLogic : MonoBehaviour
@@ -7,12 +8,17 @@ public class PauseMenuLogic : MonoBehaviour
     [SerializeField] private AudioSource levelMusic;
     [SerializeField] private string buttonToMenu = "add level name here";
 
+    [SerializeField] private GameObject newFirstSelectedButton;
+    [SerializeField] private GameObject newSecondSelectedButton;
+
 
     public void PauseButton()
     {
         pauseMenu.SetActive(true);
         levelMusic.Pause();
         Time.timeScale = 0f;
+        var eventSystem = EventSystem.current;
+        eventSystem.SetSelectedGameObject(newFirstSelectedButton, new BaseEventData(eventSystem));
     }
 
     public void ResumeButton()
@@ -20,6 +26,8 @@ public class PauseMenuLogic : MonoBehaviour
         pauseMenu.SetActive(false);
         levelMusic.Play();
         Time.timeScale = 1f;
+        var eventSystem = EventSystem.current;
+        eventSystem.SetSelectedGameObject(newSecondSelectedButton, new BaseEventData(eventSystem));
     }
 
     public void MenuButton()

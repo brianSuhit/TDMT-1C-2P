@@ -4,6 +4,7 @@ using UnityEngine;
 public class ExplosionBullet : MonoBehaviour
 {
     [SerializeField] private GameObject ExplosionEffect;
+    [SerializeField] private AudioSource explosionClip;
     //[SerializeField] private DefuseBullet defuseBullet;
     //[SerializeField] private HealthPoints healthPoints;
     //[SerializeField] private float waitForDestroy = 0.5f;
@@ -11,6 +12,7 @@ public class ExplosionBullet : MonoBehaviour
     private void OnDestroy()
     {
         Instantiate(ExplosionEffect, transform.position, transform.rotation);
+        explosionClip.Play();
     }
 
     //private void Awake()

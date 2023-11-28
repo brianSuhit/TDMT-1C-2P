@@ -741,6 +741,8 @@ MonoBehaviour:
   creditsMenu: {fileID: 1618609269}
   MainMenu: {fileID: 423463262}
   startButton: TutorialLevel
+  newFirstSelectedButton: {fileID: 1107404615}
+  newSecondSelectedButton: {fileID: 1027691297}
 --- !u!1 &466100254
 GameObject:
   m_ObjectHideFlags: 0

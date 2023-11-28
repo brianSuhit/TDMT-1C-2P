@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 public class EnemyChasingPlayer : MonoBehaviour
@@ -10,15 +9,6 @@ public class EnemyChasingPlayer : MonoBehaviour
 
     [SerializeField] private CharacterMovement targetPos;
 
-    private void Awake()
-    {
-        if (targetPos == null)
-        {
-            Debug.LogError($"{name}: Target is null!");
-            transform.position = Vector3.zero;
-        }
-    }
-
     private void Update()
     {
         ChasingPlayer();
@@ -26,7 +16,12 @@ public class EnemyChasingPlayer : MonoBehaviour
 
     private void ChasingPlayer()
     {
-        if(Vector2.Distance(transform.position, targetPos.transform.position) > threshold)
+        if (targetPos == null)
+        {
+            Debug.LogError($"{name}: Target is null!");
+            transform.position = Vector3.zero;
+        }
+        else if (Vector2.Distance(transform.position, targetPos.transform.position) > threshold)
         {
             Vector2 currentPosition = transform.position;
             Vector2 nextPosition = targetPos.transform.position;

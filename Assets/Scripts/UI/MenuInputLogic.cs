@@ -7,7 +7,8 @@ public class MenuInputLogic : MonoBehaviour
     [SerializeField] private GameObject creditsMenu;
     [SerializeField] private GameObject MainMenu;
     [SerializeField] private string startButton = "add level name here";
-    //[SerializeField] private GameObject itemsButton;
+    [SerializeField] private GameObject newFirstSelectedButton;
+    [SerializeField] private GameObject newSecondSelectedButton;
 
     public void StartButton()
     {
@@ -19,8 +20,8 @@ public class MenuInputLogic : MonoBehaviour
     {
         MainMenu.SetActive(false);
         creditsMenu.SetActive(true);
-        //var eventSystem = EventSystem.current;
-        //eventSystem.SetSelectedGameObject(itemsButton, new BaseEventData(eventSystem));
+        var eventSystem = EventSystem.current;
+        eventSystem.SetSelectedGameObject(newFirstSelectedButton, new BaseEventData(eventSystem));
     }
 
     public void ExitButton()
@@ -32,5 +33,7 @@ public class MenuInputLogic : MonoBehaviour
     {
         MainMenu.SetActive(true);
         creditsMenu.SetActive(false);
+        var eventSystem = EventSystem.current;
+        eventSystem.SetSelectedGameObject(newSecondSelectedButton, new BaseEventData(eventSystem));
     }
 }

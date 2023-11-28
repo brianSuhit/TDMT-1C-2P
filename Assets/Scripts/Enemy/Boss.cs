@@ -48,8 +48,8 @@ public class Boss : MonoBehaviour
 
             enemiesList.Add(tempEnemy);
         }
-        StartCoroutine(SpawnEnemies());
 
+        StartCoroutine(SpawnEnemies());
     }
 
     private void Update()
