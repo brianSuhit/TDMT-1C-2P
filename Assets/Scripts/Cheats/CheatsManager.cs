@@ -56,7 +56,7 @@ public class CheatsManager : MonoBehaviour
 
     public void SetMovementSpeed(InputAction.CallbackContext inputContext)
     {
-        Debug.LogError("Speed Multiplier Cheat Activated");
+        Debug.Log("Speed Multiplier Cheat Activated");
 
         if (inputContext.started)
         {
