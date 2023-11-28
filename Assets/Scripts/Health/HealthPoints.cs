@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class HealthPoints : MonoBehaviour
@@ -12,6 +13,7 @@ public class HealthPoints : MonoBehaviour
     [SerializeField] private bool isEnemy; 
 
     private bool isVulnerable = true;
+    //[SerializeField] private float waitForDestroy = 0.5f;
 
     public void Start()
     {
@@ -33,6 +35,7 @@ public class HealthPoints : MonoBehaviour
         if (shouldDestroyOnDeath && health <= 0)
         {
             Destroy(gameObject);
+            //StartCoroutine(WaitForDesactivated());
         }
 
         if (health <= 0)
@@ -51,4 +54,10 @@ public class HealthPoints : MonoBehaviour
     {
         return ChangeVulnerability;
     }
+
+    //private IEnumerator WaitForDesactivated()
+    //{
+    //    gameObject.SetActive(false);
+    //    yield return new WaitForSeconds(waitForDestroy);
+    //}
 }

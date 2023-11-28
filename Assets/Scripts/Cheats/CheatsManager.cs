@@ -11,13 +11,13 @@ public class CheatsManager : MonoBehaviour
     [SerializeField] private CharacterMovement characterMovement;
     [SerializeField] private HealthPoints healthPoints;
     [SerializeField] private List<HealthPoints> enemiesListCount = new List<HealthPoints>();
-    [SerializeField] private int damageAOE = 5;
+    [SerializeField] private int AOEDamageValue = 5;
 
     public void Awake()
     {
         if (!healthPoints)
         {
-            Debug.LogError("player has no heal");
+            Debug.LogError("player has no health");
         }
 
         if (enemiesListCount == null)
@@ -36,7 +36,7 @@ public class CheatsManager : MonoBehaviour
 
     public void SetInvulnerabilityState(InputAction.CallbackContext inputContext)
     {
-        Debug.Log("Invulnerability cheat activated");
+        Debug.Log("Invulnerability Cheat Activated");
 
         if (inputContext.started)
         {
@@ -46,17 +46,17 @@ public class CheatsManager : MonoBehaviour
 
     public void SetDamageAOE(InputAction.CallbackContext inputContext)
     {
-        Debug.Log("Damage AOE cheat activated");
+        Debug.Log("Damage AOE cheat Activated");
 
         if (inputContext.started)
         {
-            MakeDamage();
+            DoDamageInArea();
         }
     }
 
     public void SetMovementSpeed(InputAction.CallbackContext inputContext)
     {
-        Debug.LogError("Multiplier speed cheat activated");
+        Debug.LogError("Speed Multiplier Cheat Activated");
 
         if (inputContext.started)
         {
@@ -64,11 +64,11 @@ public class CheatsManager : MonoBehaviour
         }
     }
 
-    public void MakeDamage()
+    public void DoDamageInArea()
     {
         for (int i = 0; i < enemiesListCount.Count; i++)
         {
-            enemiesListCount[i].TakeDamage(damageAOE);
+            enemiesListCount[i].TakeDamage(AOEDamageValue);
         }
     }
 }

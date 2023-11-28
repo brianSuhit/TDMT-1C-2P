@@ -242,3 +242,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExplosionEffect: {fileID: 3710855242049976292, guid: 3c9d0feb2b807fb44acdbe2d042d03e3, type: 3}
+  defuseBullet: {fileID: 1540024350354916140}
+  healthPoints: {fileID: -234806825346688702}
+  waitForDestroy: 0.5

@@ -23,8 +23,14 @@ public class BulletChasingEnemy : MonoBehaviour
             }
             if (playerHealth == null)
             {
-                Debug.LogError($"{name}: player is null is null!");
+                Debug.LogError($"{name}: player is null!");
             }
+            if (targetPos == null)
+            {
+                Debug.LogError($"{name}: Target is null!");
+
+            }
+
             else
             {
                 Vector2 currentPosition = transform.position;

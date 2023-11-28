@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using static Boss;
 
 public class EnemyShoot : MonoBehaviour
 {
@@ -6,6 +8,10 @@ public class EnemyShoot : MonoBehaviour
 
     private float shootTimer = 0f;
     [SerializeField] private float shootInterval;
+
+    private void Start()
+    {
+    }
 
     void Update()
     {

@@ -844,6 +844,10 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 403236251}
+    - target: {fileID: 5715563973150317085, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
+      propertyPath: shootInterval
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6048072283415869994, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.5
@@ -893,11 +897,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6048072283415869994, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
   m_PrefabInstance: {fileID: 259720544}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &291310568 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1224754563969788173, guid: b7ff27a77a4ccef46a2ae5f49f17f085, type: 3}
-  m_PrefabInstance: {fileID: 9084030701006928311}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &325868735
 GameObject:
@@ -1131,7 +1130,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 695157414290842098, guid: b7ff27a77a4ccef46a2ae5f49f17f085, type: 3}
   m_PrefabInstance: {fileID: 9084030701006928311}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 291310568}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49f835c75671300479f6d2c84a3f26a7, type: 3}
@@ -1142,7 +1141,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6574688185999805903, guid: b7ff27a77a4ccef46a2ae5f49f17f085, type: 3}
   m_PrefabInstance: {fileID: 9084030701006928311}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 291310568}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a6ff9c387e200648aaed9105ad6183a, type: 3}
@@ -1153,25 +1152,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1114556303323300960, guid: b7ff27a77a4ccef46a2ae5f49f17f085, type: 3}
   m_PrefabInstance: {fileID: 9084030701006928311}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 291310568}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de1a76cdfc08fd246934b2e66600f606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &403236255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 291310568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62ce6fcd1bbb78346af152fc406434b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
 --- !u!1 &417970689
 GameObject:
   m_ObjectHideFlags: 0
@@ -2684,7 +2670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverMenu: {fileID: 2142708128}
   levelMusic: {fileID: 458373194}
-  loseMusic: {fileID: 1762301886}
+  loseMusic: {fileID: 0}
   healthPoints: {fileID: 403236251}
   buttonToMenu: MainMenu
 --- !u!1 &1045771154
@@ -4595,6 +4581,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5715563973150317085, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
+      propertyPath: shootSpawn
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5715563973150317085, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
       propertyPath: enemyHealth
       value: 
       objectReference: {fileID: 112233745}
@@ -4602,6 +4592,10 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 403236251}
+    - target: {fileID: 5715563973150317085, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
+      propertyPath: shootInterval
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6048072283415869994, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4700,29 +4694,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1114556303323300960, guid: b7ff27a77a4ccef46a2ae5f49f17f085, type: 3}
-      propertyPath: health
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1114556303323300960, guid: b7ff27a77a4ccef46a2ae5f49f17f085, type: 3}
-      propertyPath: maxHealth
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 1224754563969788173, guid: b7ff27a77a4ccef46a2ae5f49f17f085, type: 3}
       propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1224754563969788173, guid: b7ff27a77a4ccef46a2ae5f49f17f085, type: 3}
-      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1224754563969788173, guid: b7ff27a77a4ccef46a2ae5f49f17f085, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 403236255}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7ff27a77a4ccef46a2ae5f49f17f085, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 695157414290842098}
   - component: {fileID: 6574688185999805903}
   - component: {fileID: 1114556303323300960}
+  - component: {fileID: 343717938888963893}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,6 +153,19 @@ MonoBehaviour:
   health: 100
   shouldDestroyOnDeath: 0
   isEnemy: 0
+--- !u!114 &343717938888963893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224754563969788173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ce6fcd1bbb78346af152fc406434b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!1 &2948108716435572092
 GameObject:
   m_ObjectHideFlags: 0

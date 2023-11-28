@@ -16,7 +16,7 @@ public class Hazard : MonoBehaviour
         }
         else
         {
-            Debug.LogError($"{name}: playerHP is null");
+            Debug.LogError($"{name}: player health is null");
         }
     }
 }
