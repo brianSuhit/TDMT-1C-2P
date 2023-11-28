@@ -14,7 +14,6 @@ public class CharacterMovement : MonoBehaviour
         if (isSpeedMultiplier)
         {
             transform.position = transform.position + new Vector3(_direction.x, _direction.y) * characterSpeed * multiplierSpeed * Time.deltaTime;
-
         }
         else
         transform.position = transform.position + new Vector3(_direction.x, _direction.y) * characterSpeed * Time.deltaTime;
@@ -28,7 +27,6 @@ public class CharacterMovement : MonoBehaviour
     public void ChangeSpeed()
     {
         isSpeedMultiplier = !isSpeedMultiplier;
-
     }
 
     public Action GetSpeedChangeLogic()

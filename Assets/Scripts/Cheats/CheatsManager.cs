@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class CheatsManager : MonoBehaviour
 {
-    private Action InvinsibleEvent;
+    private Action InvincibleEvent;
     private Action SpeedMultiplierEvent;
 
     [SerializeField] private CharacterMovement characterMovement;
@@ -20,7 +20,7 @@ public class CheatsManager : MonoBehaviour
             Debug.LogError("player has no heal");
         }
 
-        if (enemiesListCount.Count == 0)
+        if (enemiesListCount == null)
         {
             Debug.LogError($"{name}: enemies list is empty\n Check this assignment list\n disable component");
             enabled = false;
@@ -30,23 +30,23 @@ public class CheatsManager : MonoBehaviour
 
     public void Start()
     {
-        InvinsibleEvent = healthPoints.GetVulnerabilityChangeLogic();
+        InvincibleEvent = healthPoints.GetVulnerabilityChangeLogic();
         SpeedMultiplierEvent = characterMovement.GetSpeedChangeLogic();
     }
 
     public void SetInvulnerabilityState(InputAction.CallbackContext inputContext)
     {
-        Debug.Log("me estoy apretando");
+        Debug.Log("Invulnerability cheat activated");
 
         if (inputContext.started)
         {
-            InvinsibleEvent?.Invoke();
+            InvincibleEvent?.Invoke();
         }
     }
 
     public void SetDamageAOE(InputAction.CallbackContext inputContext)
     {
-        Debug.Log("me estoy apretando");
+        Debug.Log("Damage AOE cheat activated");
 
         if (inputContext.started)
         {
@@ -56,7 +56,7 @@ public class CheatsManager : MonoBehaviour
 
     public void SetMovementSpeed(InputAction.CallbackContext inputContext)
     {
-        Debug.LogError("I multiplier speed x2");
+        Debug.LogError("Multiplier speed cheat activated");
 
         if (inputContext.started)
         {

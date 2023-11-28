@@ -1557,8 +1557,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 623278244}
         m_TargetAssemblyTypeName: InputReader, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+        m_MethodName: SetShootingValue
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1609,6 +1609,18 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 399e5b97-dcbe-4b48-95f9-762d41e407da
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 95d953a2-63a2-4575-b310-176dbdd83298
+    m_ActionName: Player/GodMode[/Keyboard/f10]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 57101f9d-ded2-4b7b-9617-256432921b59
+    m_ActionName: Player/DamageAOE[/Keyboard/f12]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 80fd7f17-cc8d-487c-b10a-b188a47559e2
+    m_ActionName: Player/SpeedMultiplier[/Keyboard/f11]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

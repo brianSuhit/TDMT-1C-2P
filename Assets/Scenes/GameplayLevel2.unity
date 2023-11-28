@@ -1842,6 +1842,10 @@ PrefabInstance:
       propertyPath: healthPoints
       value: 
       objectReference: {fileID: 403236251}
+    - target: {fileID: 4606740204870232164, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
+      propertyPath: characterMovement
+      value: 
+      objectReference: {fileID: 403236248}
     - target: {fileID: 5662431952973057511, guid: f9dfbf8c97673d540981a7de25c3446e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.031656325
