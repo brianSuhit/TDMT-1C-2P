@@ -2581,7 +2581,7 @@ MonoBehaviour:
   gameOverMenu: {fileID: 2142708128}
   levelMusic: {fileID: 458373194}
   loseMusic: {fileID: 1762301886}
-  playerHealthPoints: {fileID: 0}
+  playerHealthPoints: {fileID: 403236251}
   buttonToMenu: MainMenu
   FirstButtonSelected: {fileID: 808347555}
 --- !u!1 &1045771154
@@ -2791,7 +2791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1121510739
 RectTransform:
   m_ObjectHideFlags: 0
