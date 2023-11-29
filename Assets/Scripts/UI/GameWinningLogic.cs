@@ -11,18 +11,19 @@ public class GameWinningLogic : MonoBehaviour
     [SerializeField] private AudioSource WinningMusic;
     [SerializeField] private HealthPoints bossHealthPoints;
     [SerializeField] private string buttonToMenu = "add level name here";
-    [SerializeField] private GameObject primerBotonEnElMenu;
+    [SerializeField] private GameObject FirstButtonSelected;
 
 
     private void Update()
     {
         EndLevel();
     }
+
     public void ReturnButton()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         var eventSystem = EventSystem.current;
-        eventSystem.SetSelectedGameObject(primerBotonEnElMenu, new BaseEventData(eventSystem));
+        eventSystem.SetSelectedGameObject(FirstButtonSelected, new BaseEventData(eventSystem));
     }
 
     public void MenuButton()

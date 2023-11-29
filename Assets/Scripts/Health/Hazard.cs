@@ -17,8 +17,17 @@ public class Hazard : MonoBehaviour
         {
             playerHP.TakeDamage(damage);
             Instantiate(ExplosionEffect, transform.position, transform.rotation);
-            explosionClip.Play();
+
+            if (object.ReferenceEquals(explosionClip, null))
+            {
+                Debug.LogError("Object destroy, dont play explosion sound");
+            }
+            else
+            {
+                explosionClip.Play();
+            }
         }
+
         else
         {
             Debug.LogError($"{name}: player health is null");
