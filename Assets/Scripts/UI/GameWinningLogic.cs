@@ -11,6 +11,7 @@ public class GameWinningLogic : MonoBehaviour
     [SerializeField] private AudioSource WinningMusic;
     [SerializeField] private HealthPoints bossHealthPoints;
     [SerializeField] private string buttonToMenu = "add level name here";
+    [SerializeField] private string buttonToResetGame = "add level name here";
     [SerializeField] private GameObject FirstButtonSelected;
 
 
@@ -21,7 +22,7 @@ public class GameWinningLogic : MonoBehaviour
 
     public void ReturnButton()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(buttonToResetGame);
         var eventSystem = EventSystem.current;
         eventSystem.SetSelectedGameObject(FirstButtonSelected, new BaseEventData(eventSystem));
     }

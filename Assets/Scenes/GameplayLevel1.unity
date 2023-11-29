@@ -418,6 +418,7 @@ MonoBehaviour:
   loseMusic: {fileID: 1762301886}
   playerHealthPoints: {fileID: 403236251}
   buttonToMenu: MainMenu
+  buttonToResetGame: GameplayLevel1
   FirstButtonSelected: {fileID: 808347555}
 --- !u!224 &146941718
 RectTransform:

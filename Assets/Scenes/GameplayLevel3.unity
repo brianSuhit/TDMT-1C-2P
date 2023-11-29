@@ -1938,7 +1938,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 999055606}
         m_TargetAssemblyTypeName: GameOverLogic, Assembly-CSharp
-        m_MethodName: ReturnButton
+        m_MethodName: RestartButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2583,6 +2583,7 @@ MonoBehaviour:
   loseMusic: {fileID: 1762301886}
   playerHealthPoints: {fileID: 403236251}
   buttonToMenu: MainMenu
+  buttonToResetGame: GameplayLevel1
   FirstButtonSelected: {fileID: 808347555}
 --- !u!1 &1045771154
 GameObject:

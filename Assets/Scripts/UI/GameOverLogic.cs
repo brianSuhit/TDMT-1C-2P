@@ -11,6 +11,7 @@ public class GameOverLogic : MonoBehaviour
     [SerializeField] private AudioSource loseMusic;
     [SerializeField] private HealthPoints playerHealthPoints;
     [SerializeField] private string buttonToMenu = "add level name here";
+    [SerializeField] private string buttonToResetGame = "add level name here";
     [SerializeField] private GameObject FirstButtonSelected;
 
     private void Update()
@@ -27,7 +28,7 @@ public class GameOverLogic : MonoBehaviour
 
     public void RestartButton()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(buttonToResetGame);
     }
 
     public void MenuButton()
@@ -42,5 +43,10 @@ public class GameOverLogic : MonoBehaviour
             gameOverMenu.SetActive(true);
             levelMusic.Pause();
         }
+    }
+
+    public void RestartBossLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
