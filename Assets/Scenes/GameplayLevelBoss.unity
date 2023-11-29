@@ -267,10 +267,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 259667031}
+    m_SelectOnDown: {fileID: 259667031}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -888,10 +888,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 41251993}
+    m_SelectOnDown: {fileID: 41251993}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -919,8 +919,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 999055606}
-        m_TargetAssemblyTypeName: GameOverLogic, Assembly-CSharp
+      - m_Target: {fileID: 999055607}
+        m_TargetAssemblyTypeName: GameWinningLogic, Assembly-CSharp
         m_MethodName: ReturnButton
         m_Mode: 1
         m_Arguments:
@@ -2192,8 +2192,8 @@ MonoBehaviour:
   pauseMenu: {fileID: 1111750257}
   levelMusic: {fileID: 458373194}
   buttonToMenu: MainMenu
-  newFirstSelectedButton: {fileID: 0}
-  newSecondSelectedButton: {fileID: 0}
+  newFirstSelectedButton: {fileID: 1121510738}
+  newSecondSelectedButton: {fileID: 2080130818}
 --- !u!1 &666234169
 GameObject:
   m_ObjectHideFlags: 0
@@ -2821,12 +2821,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverMenu: {fileID: 2142708128}
-  levelMusic: {fileID: 458373194}
   loseMusic: {fileID: 1762301886}
-  healthPoints: {fileID: 403236251}
   buttonToMenu: MainMenu
-  newFirstSelectedButton: {fileID: 0}
-  newSecondSelectedButton: {fileID: 0}
 --- !u!114 &999055607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4330,8 +4326,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 63872986}
-  - {fileID: 41251992}
   - {fileID: 259667030}
+  - {fileID: 41251992}
   - {fileID: 1223364289}
   - {fileID: 463521780}
   - {fileID: 1270912198}

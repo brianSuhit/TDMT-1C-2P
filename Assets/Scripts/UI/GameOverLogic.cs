@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -6,39 +7,26 @@ using UnityEngine.SceneManagement;
 public class GameOverLogic : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverMenu;
-    [SerializeField] private AudioSource levelMusic;
     [SerializeField] private AudioSource loseMusic;
-    [SerializeField] private HealthPoints healthPoints;
     [SerializeField] private string buttonToMenu = "add level name here";
+    //[SerializeField] private GameObject primerBotonEnElMenu;
 
-    [SerializeField] private GameObject newFirstSelectedButton;
-    [SerializeField] private GameObject newSecondSelectedButton;
-
-    private void Update()
+    public void SetGameOverScreen()
     {
-        EndLevel();
+        gameOverMenu.SetActive(true);
+        //var eventSystem = EventSystem.current;
+        //eventSystem.SetSelectedGameObject(primerBotonEnElMenu, new BaseEventData(eventSystem));
+        //Debug.Log("Current selected GameObject : " + eventSystem.currentSelectedGameObject);
+        loseMusic.Play();
     }
 
-    public void ReturnButton()
+    public void RestartButton()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        var eventSystem = EventSystem.current;
-        eventSystem.SetSelectedGameObject(newFirstSelectedButton, new BaseEventData(eventSystem));
     }
 
     public void MenuButton()
     {
         SceneManager.LoadScene(buttonToMenu);
-    }
-
-    public void EndLevel()
-    {
-        if (healthPoints.health <= 0)
-        {
-            gameOverMenu.SetActive(true);
-            var eventSystem = EventSystem.current;
-            eventSystem.SetSelectedGameObject(newSecondSelectedButton, new BaseEventData(eventSystem));
-            levelMusic.Pause();
-        }
     }
 }

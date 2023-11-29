@@ -586,6 +586,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 860950775048084065, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
+      propertyPath: xMax
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 860950775048084065, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
+      propertyPath: xMin
+      value: -7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 860950775048084065, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
+      propertyPath: yMax
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 860950775048084065, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
+      propertyPath: yMin
+      value: -4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4159653372765615152, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
       propertyPath: m_SortingOrder
       value: 10
@@ -596,7 +612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5069813892716173307, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
       propertyPath: positions.Array.data[0].y
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5069813892716173307, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
       propertyPath: positions.Array.data[1].x
@@ -604,7 +620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5069813892716173307, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
       propertyPath: positions.Array.data[1].y
-      value: -3
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 5715563973150317085, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
       propertyPath: enemyHealth
@@ -620,11 +636,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6048072283415869994, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.5
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 6048072283415869994, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6048072283415869994, guid: a4092e4c94a4efd4a95e5a66e54af50a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1437,8 +1453,8 @@ MonoBehaviour:
   pauseMenu: {fileID: 1111750257}
   levelMusic: {fileID: 458373194}
   buttonToMenu: MainMenu
-  newFirstSelectedButton: {fileID: 0}
-  newSecondSelectedButton: {fileID: 0}
+  newFirstSelectedButton: {fileID: 1121510738}
+  newSecondSelectedButton: {fileID: 2080130818}
 --- !u!1 &666234169
 GameObject:
   m_ObjectHideFlags: 0
@@ -2461,12 +2477,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverMenu: {fileID: 2142708128}
-  levelMusic: {fileID: 458373194}
   loseMusic: {fileID: 0}
-  healthPoints: {fileID: 403236251}
   buttonToMenu: MainMenu
-  newFirstSelectedButton: {fileID: 0}
-  newSecondSelectedButton: {fileID: 0}
+  primerBotonEnElMenu: {fileID: 0}
 --- !u!1 &1045771154
 GameObject:
   m_ObjectHideFlags: 0

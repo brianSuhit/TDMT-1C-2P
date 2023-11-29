@@ -32,8 +32,6 @@ public class GameplayLevelChange : MonoBehaviour
     private void CountLogic()
     {
         enemiesEliminated++;
-        Debug.Log($"{enemiesEliminated}");
-
         if (enemiesListCount.Count == enemiesEliminated)
         {
            levelChangeShip.SetActive(true);

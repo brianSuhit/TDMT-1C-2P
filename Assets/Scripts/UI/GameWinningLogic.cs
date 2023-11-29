@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class GameWinningLogic : MonoBehaviour
@@ -10,6 +11,8 @@ public class GameWinningLogic : MonoBehaviour
     [SerializeField] private AudioSource WinningMusic;
     [SerializeField] private HealthPoints bossHealthPoints;
     [SerializeField] private string buttonToMenu = "add level name here";
+    [SerializeField] private GameObject primerBotonEnElMenu;
+
 
     private void Update()
     {
@@ -18,6 +21,8 @@ public class GameWinningLogic : MonoBehaviour
     public void ReturnButton()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        var eventSystem = EventSystem.current;
+        eventSystem.SetSelectedGameObject(primerBotonEnElMenu, new BaseEventData(eventSystem));
     }
 
     public void MenuButton()
@@ -33,5 +38,4 @@ public class GameWinningLogic : MonoBehaviour
             levelMusic.Pause();
         }
     }
-
 }
